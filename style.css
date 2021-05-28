@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3b3b98;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+p {
+  margin: 5px 0;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.checkbox {
+  margin-right: 0;
+}
+
+.container {
+  background-color: #161672;
+  box-shadow: 0px 2px 5px rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  width: 400px;
+  height: 300px;
+  max-width: 100%;
+}
+
+.result {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  padding: 18px 15px;
+  margin-bottom: 50px;
+  height: 55px;
+}
+
+#copy {
+  font-size: 20px;
+  position: absolute;
+  top: 7.5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+#copied {
+  transition: all 0.2s;
+}
+
+#generate {
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+  .result {
+    font-size: 14px;
+  }
+}

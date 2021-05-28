@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
+      integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <h2>Password Generator</h2>
+
+    <div class="container">
+      <div class="result">
+        <p id="password"></p>
+        <button id="copy" title="Copy to clipbord">
+          <i class="far fa-clipboard"></i>
+        </button>
+      </div>
+
+      <label>Length of password</label>
+      <input type="number" min="6" max="128" id="length" value="0" />
+      <br />
+
+      <label>Use numbers</label>
+      <input type="checkbox" class="checkbox" id="numbers" checked />
+      <br />
+
+      <label>Use small characters</label>
+      <input type="checkbox" class="checkbox" id="small" checked />
+      <br />
+
+      <label>Use capital characters</label>
+      <input type="checkbox" class="checkbox" id="capital" checked />
+      <br />
+
+      <label>Use special characters</label>
+      <input type="checkbox" class="checkbox" id="special" checked />
+      <br />
+
+      <button id="generate">Generate Password</button>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
